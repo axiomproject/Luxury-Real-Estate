@@ -1,0 +1,48 @@
+.logo-white {
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s ease;
+}
+
+/* Mobile menu styles */
+.mobile-menu-container {
+  background: rgba(0, 0, 0, 0.123) !important;
+  z-index: 99999 !important;
+}
+
+/* Enhanced mobile menu sidebar */
+.mobile-menu-container > div:last-child {
+  background: white !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+  border-right: 1px solid #e5e7eb !important;
+}
+
+/* Smooth transitions for mobile menu */
+.mobile-menu-container * {
+  transition: all 0.3s ease;
+}
+
+/* Prevent body scroll when mobile menu is open */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Luxury mobile menu styling */
+.mobile-menu-container nav a {
+  position: relative;
+  overflow: hidden;
+}
+
+.mobile-menu-container nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.mobile-menu-container nav a:hover::after {
+  width: 100%;
+}
