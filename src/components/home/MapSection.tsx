@@ -25,6 +25,8 @@ const applyMapStyles = () => {
   const attributionControls = document.querySelectorAll('.leaflet-control-attribution');
   attributionControls.forEach(control => {
     (control as HTMLElement).style.display = 'none';
+    (control as HTMLElement).style.visibility = 'hidden';
+    (control as HTMLElement).style.opacity = '0';
   });
 };
 
@@ -46,12 +48,13 @@ const MapSection = () => {
           scrollWheelZoom={false}
           style={{ height: '100%', width: '100%' }}
           className="z-10 map-luxury no-attribution"
-          zoomControl={false} // We'll add zoom control to bottom right for better aesthetics
+          zoomControl={false}
+          attributionControl={false}
         >
-          {/* Premium map tiles for luxury appearance */}
+          {/* OpenStreetMap tiles - free and reliable */}
           <TileLayer
-            attribution=''
-            url="https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png"
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           
           {/* Custom positioned zoom control */}
