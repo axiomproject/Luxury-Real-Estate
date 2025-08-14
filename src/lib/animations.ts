@@ -222,7 +222,7 @@ export const createStaggeredAnimation = (delay: number = 0.1) => ({
 });
 
 // Utility function to create scroll-triggered animations with different thresholds
-export const createScrollAnimation = (threshold: number = 0.1) => ({
+export const createScrollAnimation = (_threshold: number = 0.1) => ({
   hidden: {
     opacity: 0,
     y: 50,

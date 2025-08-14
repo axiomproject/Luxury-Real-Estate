@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import dreamhomeImage from '../../assets/dreamhome.jpeg';
 import CustomDropdown from '../ui/CustomDropdown';
 import ScrollAnimation from '../ui/ScrollAnimation';
-import { fadeInUp, buttonHover } from '../../lib/animations';
+import { buttonHover } from '../../lib/animations';
 
 const SearchListingsSection = () => {
   const [formData, setFormData] = useState({

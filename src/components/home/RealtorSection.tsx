@@ -1,9 +1,8 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import realtorImage from '../../assets/realtor.jpeg';
 import ScrollAnimation from '../ui/ScrollAnimation';
 import AnimatedCounter from '../ui/AnimatedCounter';
-import { fadeInLeft, fadeInRight, buttonHover, scaleIn } from '../../lib/animations';
+import { buttonHover } from '../../lib/animations';
 
 const RealtorSection = () => {
   return (

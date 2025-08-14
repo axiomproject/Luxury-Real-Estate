@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import services1 from '../../assets/services1.jpeg';
 import services2 from '../../assets/services2.jpeg';

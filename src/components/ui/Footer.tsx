@@ -1,4 +1,3 @@
-import { cn } from '../../lib/utils';
 import logo from '../../assets/logo.png';
 import './Footer.css';
 

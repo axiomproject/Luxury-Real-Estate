@@ -46,7 +46,7 @@ const Header = () => {
 
   const navigationItems = ['Home', 'Listing', 'Let\'s Move', 'About Us'];
 
-  const handleNavClick = (item: string) => {
+  const handleNavClick = (_item: string) => {
     setMobileMenuOpen(false);
     // Add smooth scroll logic here if needed
   };

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import sold1 from '../../assets/sold1.jpeg';
 import sold2 from '../../assets/sold2.jpeg';
